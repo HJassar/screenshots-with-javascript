@@ -83,7 +83,7 @@ img {
     margin: 0 5px;
 }
 
-#DOM_captureWrapper {
+#captureWrapper {
     border: solid 3px white;
     /* 🔧 optional setting to hide the wrapper, you can use this rather than JS*/
     /* position: fixed;
@@ -134,7 +134,7 @@ Magic Related 🧙‍♂️
     margin: 0 auto;
 }
 
-#DOM_generatedImagePlaceholder {
+#DOM_generatedImage {
     border: dashed 3px white;
     background: rgba(255, 255, 255, 0.185);
     width: calc(300px + 20px * 2);
