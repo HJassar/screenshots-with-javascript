@@ -1,0 +1,161 @@
+:root {
+    /* See my other tutorial where describe variables
+    https://www.youtube.com/watch?v=t1xFzqxYS4g&t=34s */
+    --bluish: #8181FF;
+    --dark: #2e2e2e;
+    --lighter: #525252;
+}
+
+* {
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--dark);
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+#DOM_main {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+#textAreaDiv {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 2em;
+}
+
+#DOM_generate {
+    display: block;
+    margin: 1em auto;
+    background-color: var(--bluish);
+    border-radius: 20px;
+    padding: .7em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    /* 👎 Button transition breaks the code */
+    /* transition: 300ms; */
+}
+
+#DOM_generate:hover {
+    color: var(--bluish);
+    background-color: white;
+}
+
+#DOM_generate:active {
+    transform: translateY(3px);
+}
+
+#DOM_textArea {
+    background-color: var(--lighter);
+    width: 80%;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    resize: none;
+}
+
+#process {
+    display: flex;
+    align-items: center;
+}
+
+#arrow {
+    font-size: 2em;
+    margin: 0 5px;
+}
+
+#DOM_captureWrapper {
+    border: solid 3px white;
+    /* 🔧 optional setting to hide the wrapper, you can use this rather than JS*/
+    /* position: fixed;
+    left: -1000000px; */
+}
+
+/*********************
+Magic Related 🧙‍♂️
+*********************/
+
+#DOM_capture {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background: var(--dark);
+    padding: 20px;
+    color: var(--bluish);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+}
+
+#website{
+    position: absolute;
+    bottom:3px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.social{
+    width: 16px;
+    margin-left: 5px;
+}
+
+#DOM_extractor{
+    text-align: center;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+#DOM_generatedImagePlaceholder {
+    border: dashed 3px white;
+    background: rgba(255, 255, 255, 0.185);
+    width: calc(300px + 20px * 2);
+    height: calc(300px + 20px * 2);
+}
+
+/*********************
+Footer
+*********************/
+
+#footer__logo {
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    width: 50px;
+    filter: grayscale(1);
+    opacity: 0.7;
+    transition: 1s;
+}
+
+#footer__logo:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}

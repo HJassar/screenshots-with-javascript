@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Screenshots with JavaScript</title>
+</head>
+
+<body>
+  <main id="DOM_main">
+
+    <!-- Input and generate button -->
+    <div id="textAreaDiv">
+      <textarea type="text"
+        id="DOM_textArea">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium vitae quam animi officiis. Numquam, molestias? Laborum, nostrum tenetur modi quia officia quaerat quidem blanditiis ducimus provident, nulla nemo, amet veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illum temporibus atque eos labore corrupti perspiciatis fugit recusandae optio, laboriosam a, quidem rem, nam saepe. Delectus blanditiis dicta quaerat dolor! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt consectetur et atque rem doloremque! Dolore eligendi magni id iste illum amet inventore voluptatum eaque, possimus veniam, assumenda sed temporibus exercitationem! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam eos sapiente eveniet cumque velit aliquam exercitationem numquam. Delectus quod odio velit vitae magnam? Sed, pariatur assumenda! Exercitationem cum dignissimos nemo?</textarea>
+      <button id="DOM_generate">Generate</button>
+    </div>
+
+    <div id="process">
+
+      <!-- Magic 🧙‍♂️ -->
+      <div id="DOM_captureWrapper">
+        <div id="DOM_capture">
+          <div id="DOM_extractor"></div>
+          <div id="watermark">
+            <img src="/assets/logo.png" alt="">
+          </div>
+          <div id="website">CNSplit <img class="social" src="assets/youtube.png" alt=""></div>
+        </div>
+      </div>
+
+      <!-- Right arrow -->
+      <div id="arrow">
+        &rarr;
+      </div>
+
+      <!-- Generated image placeholder with a link -->
+      <a download="Thumbnail.jpeg" id="DOM_link">
+        <div id="DOM_generatedImagePlaceholder"></div>
+      </a>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <div id="footer__logo">
+      <a href="https://www.youtube.com/channel/UCgqsUFsHUMT5bX3BjtTX2fA" target="_blank">
+        <img id="logoImg" src="assets/logo.png" alt="CNSplit">
+      </a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/html2canvas.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
